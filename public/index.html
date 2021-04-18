@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .jumbotron {
+            background: url(nature.jpg) center center;
+            height: 800px;
+            background-size: cover;
+        }
+        
+        .mg {
+            width: 75px;
+            height: 75px;
+            margin-bottom: 60px;
+        }
+        
+        .featured {
+            color: #fff;
+        }
+        
+        h1 {
+            font-size: 50px;
+        }
+        
+        .btn-default {
+            font-weight: bold;
+            color: #fff;
+            background-color: rgb(145, 82, 58, 0.9);
+            border-radius: 10px;
+            margin-top: 20px;
+            width: 160px;
+            transition: width 0.5s;
+            margin-right: 20px
+        }
+        
+        .btn-default:hover {
+            background-color: deeppink;
+            width: 180px;
+            height: 48px;
+            transform: rotate3d();
+        }
+        
+        .footer {
+            background-color: #eee;
+            height: 60px;
+            font-size: 15px;
+            padding: 10px 0px;
+        }
+        
+        @media (min-width: 400px) and (max-width: 768px) {
+            .jumbotron {
+                height: 600px;
+                margin: 0;
+            }
+            .mg {
+                width: 50px;
+                height: 50px;
+            }
+            h1 {
+                font-size: 42px;
+                text-align: center;
+            }
+            .featured p {
+                font-size: 15px;
+                text-align: center;
+            }
+            .featured {
+                text-align: center;
+            }
+            .footer {
+                background-color: #eee;
+                height: 60px;
+                font-size: 15px;
+                padding: 10px 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <div>
+                <img class="mg" src="lgm.png">
+            </div>
+
+            <div class="featured">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h1>Best Holiday Finder App</h1>
+                        <p>Find your next destination using App<br>Compare offers and save your hard earned money for your trip!</p>
+                        <a href="#" class="btn btn-default btn-lg">Find out more</a>
+                        <a href="#" class="btn btn-default btn-lg">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <p>&copy; Develope with vishal</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
