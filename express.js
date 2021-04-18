@@ -1,6 +1,7 @@
 const path = require("path")
 const express = require("express")
 var app = express();
+port = process.env.PORT || 8090
 const templatePath = path.join(__dirname, "/public")
 
 const staticpath = path.join(__dirname, "/public/")
@@ -17,6 +18,6 @@ app.get("/", (req, res) => {
 app.get('*', (req, res) => {
     res.send("404")
 })
-app.listen(8090, () => {
+app.listen(port, () => {
     console.log("listening")
 })
